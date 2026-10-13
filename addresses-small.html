@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b01dc3042f3a6ebcf01efa9efdd81d6d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b01dc3042f3a6ebcf01efa9efdd81d6d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b01dc3042f3a6ebcf01efa9efdd81d6d = L.map(
+                "map_b01dc3042f3a6ebcf01efa9efdd81d6d",
+                {
+                    center: [48.856542, 2.347614],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e1fd68ebfc1fd1badc83c64ca1f0b94f = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_e1fd68ebfc1fd1badc83c64ca1f0b94f.addTo(map_b01dc3042f3a6ebcf01efa9efdd81d6d);
+        
+    
+            var marker_7478f043707f934e966c03362605cea8 = L.marker(
+                [48.888134, 2.376448],
+                {
+}
+            ).addTo(map_b01dc3042f3a6ebcf01efa9efdd81d6d);
+        
+    
+            marker_7478f043707f934e966c03362605cea8.bindTooltip(
+                `<div>
+                     5 rue RIQUET
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ee9778eaf96b8118e1ea31bb87c660a4 = L.marker(
+                [48.820646, 2.359275],
+                {
+}
+            ).addTo(map_b01dc3042f3a6ebcf01efa9efdd81d6d);
+        
+    
+            marker_ee9778eaf96b8118e1ea31bb87c660a4.bindTooltip(
+                `<div>
+                     141 boulevard ITALIE
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a16b589332ad2c0e93fab2afab5d025e = L.marker(
+                [48.87616, 2.302766],
+                {
+}
+            ).addTo(map_b01dc3042f3a6ebcf01efa9efdd81d6d);
+        
+    
+            marker_a16b589332ad2c0e93fab2afab5d025e.bindTooltip(
+                `<div>
+                     234 rue FAUBOURG ST-HONORÉ
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_81e2cee796322cbb41fd75bf64360cdf = L.marker(
+                [48.835423, 2.40204],
+                {
+}
+            ).addTo(map_b01dc3042f3a6ebcf01efa9efdd81d6d);
+        
+    
+            marker_81e2cee796322cbb41fd75bf64360cdf.bindTooltip(
+                `<div>
+                     62 rue MICHEL BIZOT
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_68c8494ee28e409923735d073daa19f1 = L.marker(
+                [48.863311, 2.351775],
+                {
+}
+            ).addTo(map_b01dc3042f3a6ebcf01efa9efdd81d6d);
+        
+    
+            marker_68c8494ee28e409923735d073daa19f1.bindTooltip(
+                `<div>
+                     6 rue OURS
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2b1360e012e56e62c5c3bfebd2714b46 = L.marker(
+                [48.852945, 2.364722],
+                {
+}
+            ).addTo(map_b01dc3042f3a6ebcf01efa9efdd81d6d);
+        
+    
+            marker_2b1360e012e56e62c5c3bfebd2714b46.bindTooltip(
+                `<div>
+                     30 rue PETIT-MUSC
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2cf98cdb032ae2e4a1886af0ece401ea = L.marker(
+                [48.895498, 2.35158],
+                {
+}
+            ).addTo(map_b01dc3042f3a6ebcf01efa9efdd81d6d);
+        
+    
+            marker_2cf98cdb032ae2e4a1886af0ece401ea.bindTooltip(
+                `<div>
+                     3 impasse MASSONET
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_09d99d5fb26f096fdf35068bad1000d9 = L.marker(
+                [48.867023, 2.388347],
+                {
+}
+            ).addTo(map_b01dc3042f3a6ebcf01efa9efdd81d6d);
+        
+    
+            marker_09d99d5fb26f096fdf35068bad1000d9.bindTooltip(
+                `<div>
+                     56 rue PANOYAUX
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d61a7e8f16912fbe0b94936edb370e67 = L.marker(
+                [48.866374, 2.335212],
+                {
+}
+            ).addTo(map_b01dc3042f3a6ebcf01efa9efdd81d6d);
+        
+    
+            marker_d61a7e8f16912fbe0b94936edb370e67.bindTooltip(
+                `<div>
+                     16 rue THÉRÈSE
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8a8f43daeaf80ee11cfc656367006083 = L.marker(
+                [48.88952, 2.35817],
+                {
+}
+            ).addTo(map_b01dc3042f3a6ebcf01efa9efdd81d6d);
+        
+    
+            marker_8a8f43daeaf80ee11cfc656367006083.bindTooltip(
+                `<div>
+                     11 rue JEAN ROBERT
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3e9ce35932acc3ca888dec2d52c7497b = L.marker(
+                [48.87254, 2.348002],
+                {
+}
+            ).addTo(map_b01dc3042f3a6ebcf01efa9efdd81d6d);
+        
+    
+            marker_3e9ce35932acc3ca888dec2d52c7497b.bindTooltip(
+                `<div>
+                     22 rue FAUBOURG POISSONNIÈRE
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f4a783c9e171dd8fc1f42d0db4692fca = L.marker(
+                [48.846718, 2.383559],
+                {
+}
+            ).addTo(map_b01dc3042f3a6ebcf01efa9efdd81d6d);
+        
+    
+            marker_f4a783c9e171dd8fc1f42d0db4692fca.bindTooltip(
+                `<div>
+                     19 rue CHALIGNY
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c0fb0df0ed7c8b70a92522b593541002 = L.marker(
+                [48.8599, 2.324857],
+                {
+}
+            ).addTo(map_b01dc3042f3a6ebcf01efa9efdd81d6d);
+        
+    
+            marker_c0fb0df0ed7c8b70a92522b593541002.bindTooltip(
+                `<div>
+                     77 rue LILLE
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_429da953021172bbffb9efbfd051886b = L.marker(
+                [48.857795, 2.399838],
+                {
+}
+            ).addTo(map_b01dc3042f3a6ebcf01efa9efdd81d6d);
+        
+    
+            marker_429da953021172bbffb9efbfd051886b.bindTooltip(
+                `<div>
+                     64 rue BAGNOLET
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7997df91ce77989a2aad1e3a4b0e29d2 = L.marker(
+                [48.877607, 2.402001],
+                {
+}
+            ).addTo(map_b01dc3042f3a6ebcf01efa9efdd81d6d);
+        
+    
+            marker_7997df91ce77989a2aad1e3a4b0e29d2.bindTooltip(
+                `<div>
+                     39 rue ROMAINVILLE
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_89681e4f21f29d9efcc4e0181fee6674 = L.marker(
+                [48.878845, 2.364598],
+                {
+}
+            ).addTo(map_b01dc3042f3a6ebcf01efa9efdd81d6d);
+        
+    
+            marker_89681e4f21f29d9efcc4e0181fee6674.bindTooltip(
+                `<div>
+                     4 rue PIERRE DUPONT
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_042d8fd5c03d24935b09cb3de200a544 = L.marker(
+                [48.85544, 2.362618],
+                {
+}
+            ).addTo(map_b01dc3042f3a6ebcf01efa9efdd81d6d);
+        
+    
+            marker_042d8fd5c03d24935b09cb3de200a544.bindTooltip(
+                `<div>
+                     3 place MARCHÉ-Ste-CATHERINE
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f34d1bb8958b3ac901c8c17d61834c19 = L.marker(
+                [48.850276, 2.290438],
+                {
+}
+            ).addTo(map_b01dc3042f3a6ebcf01efa9efdd81d6d);
+        
+    
+            marker_f34d1bb8958b3ac901c8c17d61834c19.bindTooltip(
+                `<div>
+                     19 rue VIALA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f8dfd332a068de2514d1ce5c4cca0838 = L.marker(
+                [48.826559, 2.34778],
+                {
+}
+            ).addTo(map_b01dc3042f3a6ebcf01efa9efdd81d6d);
+        
+    
+            marker_f8dfd332a068de2514d1ce5c4cca0838.bindTooltip(
+                `<div>
+                     16 rue ESPÉRANCE
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_dbd3298b7780cc0806fbdbb6d1ae5e8b = L.marker(
+                [48.854501, 2.325625],
+                {
+}
+            ).addTo(map_b01dc3042f3a6ebcf01efa9efdd81d6d);
+        
+    
+            marker_dbd3298b7780cc0806fbdbb6d1ae5e8b.bindTooltip(
+                `<div>
+                     51 rue GRENELLE
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
